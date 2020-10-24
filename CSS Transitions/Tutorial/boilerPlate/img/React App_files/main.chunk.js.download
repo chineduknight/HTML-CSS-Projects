@@ -1,0 +1,1064 @@
+(this["webpackJsonpeasy_wash_web"] = this["webpackJsonpeasy_wash_web"] || []).push([["main"],{
+
+/***/ "./src/App.tsx":
+/*!*********************!*\
+  !*** ./src/App.tsx ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _routes_Routes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./routes/Routes */ "./src/routes/Routes.tsx");
+/* harmony import */ var _settings_global_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./settings/__global.css */ "./src/settings/__global.css.ts");
+var _jsxFileName = "C:\\Users\\Knight\\Desktop\\Software Development\\Projects\\01 In Progress\\EasyWash\\easy_wash_web\\src\\App.tsx";
+
+
+
+
+
+
+const App = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 3
+  }
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["Global"], {
+  styles: _settings_global_css__WEBPACK_IMPORTED_MODULE_4__["default"],
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9,
+    columnNumber: 5
+  }
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10,
+    columnNumber: 5
+  }
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11,
+    columnNumber: 7
+  }
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routes_Routes__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12,
+    columnNumber: 9
+  }
+}))));
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/components/atoms/Button.tsx":
+/*!*****************************************!*\
+  !*** ./src/components/atoms/Button.tsx ***!
+  \*****************************************/
+/*! exports provided: Button, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return Button; });
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/styled.browser.esm.js");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
+/* harmony import */ var _settings_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../settings/__color */ "./src/settings/__color.ts");
+
+
+
+const Button = _emotion_styled__WEBPACK_IMPORTED_MODULE_0__["default"].button`
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: ${_settings_color__WEBPACK_IMPORTED_MODULE_2__["MAIN_COLOR"]};
+  color: white;
+  width:100%;
+
+  ${props => props.inverted && _emotion_core__WEBPACK_IMPORTED_MODULE_1__["css"]`
+    border: 1px solid ${_settings_color__WEBPACK_IMPORTED_MODULE_2__["FONT_COLOR"]};
+    background-color: #FFF;
+    color:${_settings_color__WEBPACK_IMPORTED_MODULE_2__["FONT_COLOR"]};
+  `}
+
+`;
+/* harmony default export */ __webpack_exports__["default"] = (Button);
+
+/***/ }),
+
+/***/ "./src/components/atoms/Card.tsx":
+/*!***************************************!*\
+  !*** ./src/components/atoms/Card.tsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\Knight\\Desktop\\Software Development\\Projects\\01 In Progress\\EasyWash\\easy_wash_web\\src\\components\\atoms\\Card.tsx";
+
+
+const Card = props => {
+  const {
+    imgUrl,
+    headerText,
+    bodyText
+  } = props;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: imgUrl,
+    alt: "",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 7
+    }
+  }, headerText), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 7
+    }
+  }, bodyText));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Card);
+
+/***/ }),
+
+/***/ "./src/components/img/Logo.png":
+/*!*************************************!*\
+  !*** ./src/components/img/Logo.png ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+
+/***/ "./src/components/img/man-iron.png":
+/*!*****************************************!*\
+  !*** ./src/components/img/man-iron.png ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/man-iron.06a0638f.png";
+
+/***/ }),
+
+/***/ "./src/components/img/services/delivery truck.png":
+/*!********************************************************!*\
+  !*** ./src/components/img/services/delivery truck.png ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+
+/***/ "./src/components/img/services/hand washer.png":
+/*!*****************************************************!*\
+  !*** ./src/components/img/services/hand washer.png ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAAA8AXHiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAABjPSURBVHgB7Z0LdFRFmse/kEB45KFLRkAItMhZZQF5jaIBtHcEFnQFcXWJOiijCOjKyqzAwMyOwLjuKLCDe3AEBY+4eIR4PIuPURD00AwQlFUUQUBEaIgKAqIkvBIC2frXTYXb99Z9dd/uvh3rd06d7q7c7vTjf7/vq6++qkukUCgUCoVCoVAoFAqFQqFQKBQKhUKhUCgUCoVCocgcbmVtBWv76tsnrL3IWogUijgIsbaWtTqbNoMUCg+ESLNOdS7ai6RQuASur85DG0MKhQNhkognN/+iuuI+A62E9QkpFA48TQbh9B31cN3kD07z9sCKXXUF7TrJxNWJFLY0oZ82JoH0KX244X5hu07UV/dYx9+TwpafurBMNM8rdHPYj6Sw5acurP3Gjo/L/txwv7rqR9qy/BnZ85SwFLaESRKgd7nhlrruN/+yrlAeX+0jhcIFGOV5STdMIoXCBb1Y+4HciUqlGhSegLjg4uxEFWHtIlIoPBJibQmZBRYhlW1X+AQsU4iSZ6FmkCbgtaQqJxQ+AVGpygmFr4TIfmAQIoUiDpwGCBidqnRGkgjpWmNC5gKtmoq9fCJM2pdpzCfhMeqlbqXMJkQSARXktVTWK0mEyLkkWLQVlLln8T4yfJ7+va6oO7pucd3UMcMb8+dOCyFyXxKsn6cLUWYxgySWakvZU1xYaFvKnqwrbtva6XOPoQwim9JDiOKLI5BXglt8ibUzFHxCrL1u7Hxs3D/Rjf26NzwuzGtJE+4YzO9v/PQL2euIzx1ibStlQHVFuoQ1j7S4Kobc/Iuo6+DbqcsNt1BBuxBVnzjOmwF8yc1Ze5eCDd7nJjIkWZkLpLmPjpY+oX/vK+imgb3p/c3bqfLEadkhmHqCwPClfEoBJotST4gkpSd9Rz1MJWN/x8WlZ+28KfRxmbQm6mIK9pmLkycm+GYukCIvzKCObVvbPvH4iVM0+8U36bnX3rM7bAlrs1iLUgBJh8Uaw9pQfUe3m39Jg38zn3Jym5sOvuy6IXT4y8/o2P7dxj9VkzaPF0TCrC00dhpdoBXNmzXlx8GCwTVmovVKh7D+SIbY6tbZr1LzfOtpuXbdr6EtZquFL3Q5BQ98kJVkcIHDBvSmJyaWkhc6ti2iO4f1p+qas/Txjr1W/yuQsVc6SpNjvnAsWECzA38vMB/Tk4IJRoEhfUcxE4hXUQkQ2OO5b/z3FPY6li50DGmDoTEUENIurEZGmCRJzam/Gu4YVzmBoB/iKh1aYnVIiLSV2i9SAFIy6RBWjLk+c+JHvmjBicqDpnUP+ylYhEiyBL90aH+601oMnoBrfGb6fTR/+q8Cb73SEWN1Ze1a8eBcTTUL2ltQcZ/rLZ+AUWH0gzXG7jdYW0XBwZRCKa4XAtyZn/To0pGnJTB63L6nQnZI2mOvdAgLic0x+o7DX27lo79WrduYDsaIcNXj45gATfnQ6ZS+oXaItB+vV/39e0niAhEbDWAuLBlArBBXcbvWXFxBGzmmI48FYKrDxs7uN4/mqQcE68eZ69uz7i2rHFaUtcso+UA8YdZuIE1AQkiOwAU+w1xWKjhw6CjPey1fVW532NOk5b1SYr3SJawwaeKKF4gqSskBYhrD2giSiN8NcIEItBMN2L2ybNVGLrCKQ99bHRKhFG0PkK4pnShp5nkoeQdn3evkP2HSgm8kNvG+QhQnyXSBdriIvUKkxaaHKMmkS1jgA/ImLphwxFVPkr8gBlnG2jTyYZg+/vZB9MjdwyhdiNgLwvrygFQ/T1EK3GEOpRf4fVifmaQFwFasI809Rck/wqQlM8Nun4AhPqwCfjwx3C/Ib8ket+D38bfuXYop3VSwmMuiSiJlc4vpirFkhEgLjnvp+qKkCc/PMyxEmssLOx2IpCSEAguAW7/TBslixCNzZMKKUmoGPJx0Wyw9UbogpGSAoPwR0tICltl/VCBMYO4Mc3TFKQ6+/WD2kjetrFVKgnZBkISVTCComWQjKIzkxt8xiGfJM8UyGamoTztISHl5TZBcYTIIk5YR72V1gLBQEFWmCkrQZ9RvWE7LlGqIUgpdoKAxWywMBpbYHYARHCaIM11QAC7wgDx/lVIXKLCyWDjDMWLK5EqEsNUfEJT/B8s19QjACM4P4AJ7j5om+xMGPcmcysHr/5okblYmrBA10gWTGNkhedk/DcnLZGLhAlMFxHUZGUbuMlfoej4sk3ji4VIeRzU2bFxgqhCT8RF9p6weK6Wz4KkAE8KNUVQ2o8BUY8ozyixWtP7AmPiqffv2/LZJk2BvtHz8+HGqrKyM6WsssZQRJEKNFBQUUGGhqy3F46KiwjQHKY3jrEaFETLsl/Dyyy9Thw4dqEWLFpSbm0tBBR+8T58+MX1YRsVrlwwJT1QBYMIWDaUnlVWn+X1RHYA+PB5QH+wHieUrN0pdYCQSoeLi5JxIsu+WtOk2E1bCwsExwtq8eTMX1rlz5yjI4Evt1q0bff755w19EEj4/lk8eOcCOqEJyC2Y0EW+C6mJoLBMUns1derUpIkKbNu2TdYdkXVa+TWTadu5cye/ra2tpaAzYcIEUx+EhKkOYaW8YjFNkjaMZTEQ1JQpUyiZbNy4UdYtjcnthBUTkH344Yf89vz581RXV0dBprS0lDc/gSsNChCV8eTo0aMHJRsLYUVknVbCMgVksFhVVVX8/tmzZynozJ8/n8aNG0d+wOcRbw/OqPLAwaOmvpISf1YCWYFBkT68qGed1fF2UzpY3RHWd+zYsYP69esX+DhL8MQTT9Cdd95Jzz33HI8PxGgRbqNjx44N9zGKQsMZuXy5eXE1yoyDhMwtJ9tibd++XdZtmZqyE1aEtKqABt577z0urEyIswTdu3fn1ssJjHgmTpxo6p86ZnjKa9edkAkr2RbLixsEdkmpiLFDBPCwWEGPs7wyYsQIUx9cYJBGgkBWz96/f39KNn4KC3FWVN8hhAUyxR26Yfbs2bLEX+BcIFi53nw5H1jlZFNebkpvmAZ4epzS6G/oHyBGEaPDTHKHdkBQc+aYM9hBdIFA5gZvuukmSiZe0gwCJ2FldD7LDZniAgHcoDExisFHsuMri8B9nd1znIQVMXYgAw8agyt04wLPZ7eiuqxmfMJ34h9f5PNzy1eWUzqQucEgxlfAqYI0SoYJaeEKEbxDXNnZ6VyaGD9uXGBdk1w6n5PH7w+f9ChVHDzC78MdYc+EVNd1LZRsHYl0SrKRxFdRcqihd1OajDirYc0f4qwlS5ZQ165dqW/fvlRUVERBBe/1wIED3JQjwScqH3ArOwv1LrAuK5uJKp/fn7t4WYOoBLBaqRQWxCxb3bxhwwZatmxZw2MxV4g8HRoCe1Q8xIv47gxsdXqeG2EhzopZTIrEowAfBMm5YcOGcbOczElQJyAaJEJXrlxJ77zzjtTN2aF3gXXcBWYzQR1mwnrFdGxJ79RaK1QzyJBZXSOJ/EYW8VWEHHAjrIjdH/HjoeGHBBihYJ4OHyJVwPpATDhzjbVYbol1gc1ZbKWtbr7toemmY2HZ/NpMzQ2wVMtWxR/XJfIbxRNfAbfLv3BdF08LK3BWoIwDHyIRU2wHPjTOWIsP75qOl7ahrX95CbvAsUn2Wqo934RbK7hAmbXaUvZUjAizzp+hSozY6oN6We1XIqDkx2KTj4Rw8xuFw2HjHCFi7oudXtutsKT7WbkBbx7md/z48b4k8mCRMPe3cOHCuK2Tkc/eXsrFBWrYBDsqOOACrx55v+lYWDYRh53PacUsWx5VVlXSoNH/2lB4hy0d177wWMLLyrKyc2n56s30L39wnpJKBKvfCLFVly5djIcjzRB2ek236wpNL3ZJLyxXq6Njuz+m2lNVlk+ECcbELho+AM4O4efdCE3ETRiZwDK5tU65rQqo6PJuVNSFtc7deN/7c39tOm7a+NENokJuDqICMheIYD0muM/WRoxzFr8aU82JYsKV6z+l0mHe3WVWVhZlNStgrRUT9/f0FHttIz1HjqX2V5VQQdsOlJsXW4asXc2jkreje7fT0a8+p2+2bqLqk9YnodVvhIGPhAi5+RzkjjAZNkrr9Iu76MpRU6hpTjY1Pbabdq55lX2Acqr67mvygr7SQA8+lKx+3Q6IqX3P69gX/wAXFB4LXhrdz/TeIChYK4D0SXVNDb8vc4GF+a1o/fKF1KGIBfVnT1Jtdj4XV/mWbUyEvzW9FwwEvIwas5o0o6ymLZig8pm4tPTiQ4/NpVfeWh1zXEGbYrpn6QfkFYgr3t/IACxKxOkgtxbLlIGv+lq7UsTZ2nPUsUc//oOCnatfpc1L/8v1mxeBZSJAQD1vG8vaAzFiEmxe+ifp+/nLorkN92vqa8wgFFlcNW38PRcsG4ur6lgOr7LqJD3y+NOmY7EqyI2ospo0Zb9Ac2qSwwSVE3tVjlfeXG0SFbhm9L9RPOD3ifc3MuBqFZdbYYnCv4Y9EI7t/oi7wJyW+XTqzFnKa6ktsOg65J95E2fIrtWvUrJof9V1/H9dyZoVld9V8C/RiNEFwmJZCWVA36vowbtH8vs4rrZ+1mEOz28djjkWrzltwmgmlJZUm5VLOXXV8G+8zv4Ay4VdVFhIHTt0YHMeOQ2WyciBb7+jJ59baup3+qxuSeA3sp141uNl7wbEWTGba1R+/QX9zd/+nE6fviAsgThDcIbhA+DNf/PZJkqU/DYd+JeCGEOcgXasmHy7qQ9CwY8PnIQCF/jsHy7kt4RlK3v7fVpU9obptfG6oU6dmSWv5VbtLDWjb498T7eOn84FI46BsK14cuHShmMFcIHXjH6U/CSO32gducSLsMzusEITFq71YgW+kIIhxVwMCCCP7mHB5GflPKgUQWb1yeMxZhniAbmtCulnLFZqllfAA/DO/YdKXZ0VMheoFwpEpXeBUqHoXWC9ZbNKmt41fAjddcsQOscGAPq51KcMQoFwHrxrJHsveabXsHOB4nvxG9lvtHXFItpbbrpyX8Tta3oR1utkuPLC4U8j1OnGu5mwtNGU02JWEVy7sTSJAuHKXeAFoYiCRSsXCKEIF4jPJywbRCV1gfVWSF/5AcuG5oZku0A3iN9I9t2Rh1XyXpY1mwr/4ArB+fN1XFxB4u2Z95n69LESROUYK42/4C7P1ovFSihwb3iOsGrAzrLJrFWqXKAbcGIaiJKHzdu8rpeP8bEI3qvqxXWmOjjCwpfi5AKFqOxipQYXWG/ZnFyg/nWBk2XTkw4XaAUPU8x5rwh5wKuwTKbw2Bcf8dvTZ4KzJOyI+WyLjZVcCgXAsp1z6QJrdMvinCybeG3kzvZ/cyjtLlAPcl0SXAfuwKuwTBvPVlZo+azTZ2ooKFR9Z86L9bjicn7rRShGy+aHCxSCFa+N2/9c8JLUBQ54cBalA4uRoaddiLwKK0qGPMYPuzWLhTirtjYYVaX5bcxlIRs+2upJKMCLCzxXPxUE3LhA8dpW7+PGyfM8jYD9RGLxPe8MGM8epBHSbRhy+vtveWvR+lKqOllNFxemfz9P2agTriavVQu6rnc32rhlu68usFa3HM6tC0SzEiyfC0zByFkGEsqSjLwnNwjiEZZpJxrEWe1LhlNNQEaGcCPIyhtN+r//6XnL58TrAvUC9OICAVIcRsHyUeA9qR8FCo7u2SHrjpBH4tlFTZooBX4E8DhbIIijez+nRBjoMT7RW5SzLhOh8YwCEeDjec+XvcmTskbS6QIBktcSPO/yGI/FEvNFDYV/x778mN9iQtpNotQIhrZb/3cxa4tihrnc8vAph0c9D7lRMoMfSVYqY0RvUfSlM364wGdnTXaduU+nCxRgakdChDwSj8UyBXKwWKIm68RJb6ND5EyWTxjMM73G3An8PWbiMd8nSdg5guE6SkzgFq2I2wXqpm2shIJpmwE/72l6bbhAZPv1pNsFAq2Gy/2OMnbEewEB0040YkLaSwYewkGG3Kl8A8etmHI7lS5Y49ly4QcbOfe1+oK3clq/cGbM3zu2axtTPQrcxEr6aRtZrKRVOdzD7+vnJK1cIN6jGxeIk2/Xu2X0zbZNdGSPJgIU+6Hor/N1Q5nFK4k7oWpx8np2gyBeYUXIsBPN4U/WapUOHvJZVnVSMnA2vTd3Eo2c8xrFA68mZQ3/U28Zt+3+it/q81Bu5gLFsVZCgQtEth+cc0hbuM2uI1yQWXZ8hxDF3o3v8hMJSdV46rYs4qsIxUG8WyBHjB2i8E9MSDsBKySrAyruM5BKxv6Out1snvaA/0+w+pGLS8/xqhM0fc4C2vf1Qe6efj9vsW2spHdpblygfk4S5c5SF+gwFwghwWKvXzjDtsQYiPqzd5gnwMnoBb/iKxCvxRIT0iHRISakAcTVonkz2xfYt3GVqa9P6cP0i0kX1sk1ZybeeLHxveUreelxvOBsNqYhFryygjcr9ELRT9vIYiWjC7xQEWGe6AZwgU68P2eS1Y9uCUpeqmfd58nCSzLurgv7jCSyaXvMzC2C92P1WfhTp53TDrIzr7vBSkFopuedSGxlDgJ6sbjCDXqhuHGBKHcWLrDWBxcI1y2pi+IUtOvELXxuvnxlHsSIuio3WAg3rvgKJCIsm3xWfPOG1VWxJ0flwf2UDG6a9YLrABfBOoSin7axEoq+3FmfOJWt+HHlAtlJtHN1mfm5TFCjnn2Xxq3YxW5X08Q1B/lj9BvhMaWLk/HoV9IVz29QnCQirIixQ1gsNyPDos7mpV+rHh/XICbc4rHpeZe7tzZWiJGim8oBxGBAn7OSxUqi1h345QL3lq8yxZQQz73/8wGzVNfH9OMx+o3igqh2rSkjJ/yYeNaTyPUKo2RMlO7WEqWi8C+3mfXLIxGI4bXeJR5nYnp+5JX8y5FZKwiic4nbi97bg9caxBKovVhSUv8D7mWxn/49vfLWGhpXOoLaXaKtbLYSinHFjx+jwH3l5jh02O+ft3R96Mffyx76h5j+o19Jp2likLjCKCVwVdZEL4QZsxMN4iwxIX3qdI2tsHLzCnhCcP2CGaa/WbnAK4fcQX4j0hAN//tQRczZC4vVe/gYKunTgwnlO6mobg73N2XXQbwu8MJ7ibVWufmFJktlBH+HwPRhhVPgb1HY57ijjB2JXnHJsvDPzYQ0pjCuHOyukA3HpaJE1+p/IFCXiQoUFmjBul8uUIBFJnqa57nbPsO4OtqJI/LEaIQSIFFhRYwdwh2eOFVNbhg0ZZ5jMg8CxHGpQCyH8sLba8tp/7eHHDP3XsuMsUpJz5kT7kb+WGavB6uc7LCIryKUAIm6QtOEtLHwLyfHecc/WAkE0ltXLOZLjwBcJVxU1yGjUl7zLawWRlRugLv8x7GTadj11/LHy98xJ1jjWRRR1OXvYubuqquOU8WWv9q6wz3r3jKNrjHdY4f4znV4Luwz4sdV7E070dw47698hXSbogIqyG9OmQqy2ELslfXlzj9jYkeFKvq9cO/SDz2fIJiAN1ZnFNanGmSpBcSmCNyPG2JUDFKsRsAYNS66raux29WOMnb4cRV705tAGc0lPcOBWxLmFViZgROs6rqyXCcf411pgxHwhlYzTCNniMc47QVLhvSMUVRi7tAKP6dx9PhxudSIsePYrv/jtyddxlmZyMAHZ7qaWoKo4h10iJGzEYhnJRPR/MHteHoGtzJLJf6/HX5OPOvxY8tj+ONpMS/aNJeXKiPOuriwBd/zqTHS6eowd4s1zJ0YE5moARs0+Wk+hZQIbbv24WkHWUXtuZozPFDHrQwMevpKpsX0bCn7s2xiH/73DCWAX784NiDvpe8QcVa7NoWmDUMaI2LPg4K2xXwU5nd58foFM127XoD0jJuR9DND2hu7Eo6vgF+btCP6u1bfUdS9hCdKc7KzqVXLZtTYyWmWy0UF94X7fiOsI5KZNTalMxB0ydjpVHL/bx1fk+8ws8ZUuoSk9ypKED+CdxDXTjQKb4h9rXbWbzdUxWYJMFoVu/Jcytyvlx15khVfAb9cIfJYP+g7IKqrH11ETZpk0WXFrT0vsFAkH6wlkCRHL6ME5ggFfv3aGbUTjUJDUuMOzxMlH/DTjGTETjQKDYuJ54Sy7Xr8FFZG7ESj0PBjRxk7/BTW68aOIO5Eo9Dwu7DPiJ/CilIG7ESj0PBjRxk7/B6qRfQPxE40ADvRKIKBXzvK2OG3sExvzkvhnyI1+LWjjB1+C8tkSr/d9Ba/PdGIJ6Qzjb2bpIl139wgSIYrjImzsHLn8KdreZylgvj0g6y9ZAV6lHy2WMm4oDOuIBnWdxzdUU65BUWU2+ZyKixoQYr0AEFtWDCDzp01eQ+M6ONeQygjGfUsmN7ZR5ILZ2JSGsVrrS5ytyhA4Q+88qL+8nISoqRd0StKGcCthIsZqpYJLWbbT79IhisEu0izhmFSBBnUXS+kDARnwz7KrDP4p9D2USM56ceQNpzNlC++sbYIa5PI44Xj4yHVxej4QL1IkWpEWVNce10pFAqFQqFQKBQKhUKhUCgUCoVCoVAoFAqFQqFQKBQKhUKhUCgUzvw/I9GC05pciD8AAAAASUVORK5CYII="
+
+/***/ }),
+
+/***/ "./src/components/img/services/trolley cart.png":
+/*!******************************************************!*\
+  !*** ./src/components/img/services/trolley cart.png ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+
+/***/ "./src/components/img/services/washing machine.png":
+/*!*********************************************************!*\
+  !*** ./src/components/img/services/washing machine.png ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,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"
+
+/***/ }),
+
+/***/ "./src/components/molecules/Navbar.tsx":
+/*!*********************************************!*\
+  !*** ./src/components/molecules/Navbar.tsx ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/styled.browser.esm.js");
+/* harmony import */ var _settings_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../settings/__color */ "./src/settings/__color.ts");
+/* harmony import */ var _img_Logo_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/Logo.png */ "./src/components/img/Logo.png");
+/* harmony import */ var _img_Logo_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_Logo_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _atoms_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../atoms/Button */ "./src/components/atoms/Button.tsx");
+var _jsxFileName = "C:\\Users\\Knight\\Desktop\\Software Development\\Projects\\01 In Progress\\EasyWash\\easy_wash_web\\src\\components\\molecules\\Navbar.tsx";
+
+
+
+
+
+
+const Navbar = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Navbar.Wrapper, {
+    id: "navbar",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 12
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "logo",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 3
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _img_Logo_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+    alt: "Logo",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 5
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 5
+    }
+  }, "EasyWash")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 3
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 9
+    }
+  }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 9
+    }
+  }, "Customers")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "#",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 9
+    }
+  }, "Vendors")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    type: "button",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 9
+    }
+  }, "Sign In")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    type: "button",
+    inverted: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 9
+    }
+  }, "Sign Up"))));
+};
+
+Navbar.Wrapper = _emotion_styled__WEBPACK_IMPORTED_MODULE_1__["default"].nav`
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 0 1rem;
+  overflow: auto;
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    li a {
+      
+      padding: 0.75rem;
+      margin: 0 0.25rem;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #0c0c33;
+    }
+  }
+  .logo {
+    display: flex;
+    place-items: center;
+    h1 {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 36px;
+      color: ${_settings_color__WEBPACK_IMPORTED_MODULE_2__["MAIN_LIGHT_COLOR"]};
+    }
+  }
+
+
+`;
+/* harmony default export */ __webpack_exports__["default"] = (Navbar);
+
+/***/ }),
+
+/***/ "./src/components/molecules/Showcase.tsx":
+/*!***********************************************!*\
+  !*** ./src/components/molecules/Showcase.tsx ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/styled.browser.esm.js");
+/* harmony import */ var _atoms_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../atoms/Button */ "./src/components/atoms/Button.tsx");
+/* harmony import */ var _img_services_hand_washer_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/services/hand washer.png */ "./src/components/img/services/hand washer.png");
+/* harmony import */ var _img_services_hand_washer_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_img_services_hand_washer_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _img_services_delivery_truck_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../img/services/delivery truck.png */ "./src/components/img/services/delivery truck.png");
+/* harmony import */ var _img_services_delivery_truck_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_img_services_delivery_truck_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _img_services_trolley_cart_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/services/trolley cart.png */ "./src/components/img/services/trolley cart.png");
+/* harmony import */ var _img_services_trolley_cart_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_img_services_trolley_cart_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _img_services_washing_machine_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/services/washing machine.png */ "./src/components/img/services/washing machine.png");
+/* harmony import */ var _img_services_washing_machine_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_img_services_washing_machine_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _img_man_iron_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../img/man-iron.png */ "./src/components/img/man-iron.png");
+/* harmony import */ var _img_man_iron_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_img_man_iron_png__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _atoms_Card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../atoms/Card */ "./src/components/atoms/Card.tsx");
+var _jsxFileName = "C:\\Users\\Knight\\Desktop\\Software Development\\Projects\\01 In Progress\\EasyWash\\easy_wash_web\\src\\components\\molecules\\Showcase.tsx";
+
+
+
+
+
+
+
+
+
+
+const Showcase = () => {
+  const items = [{
+    imgUrl: _img_services_hand_washer_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+    headerText: "Wash",
+    bodyText: "Wash, Dry, Fold/Iron and neatly package your laundry"
+  }, {
+    imgUrl: _img_services_washing_machine_png__WEBPACK_IMPORTED_MODULE_6___default.a,
+    headerText: "Dry Cleaning",
+    bodyText: "Professional Dry Cleaning Service at an Affordable price"
+  }, {
+    imgUrl: _img_services_trolley_cart_png__WEBPACK_IMPORTED_MODULE_5___default.a,
+    headerText: "Home pick-up",
+    bodyText: "Home Pick-up service at a push of a button via website"
+  }, {
+    imgUrl: _img_services_delivery_truck_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    headerText: "Home delivery",
+    bodyText: "Door-step delivery upon completion at your convenience."
+  }];
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Showcase.Wrapper, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    id: "main-showcase",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "showcase-text",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "text2",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 11
+    }
+  }, "Washing & drycleaning at your convenience with efficient delivery service"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_atoms_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 11
+    }
+  }, "Get Started")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "showcase-image",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _img_man_iron_png__WEBPACK_IMPORTED_MODULE_7___default.a,
+    alt: "Showcase",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 11
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    id: "services",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "info",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 11
+    }
+  }, "Services"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 11
+    }
+  }, "The soap and a complete laundry, EazyWash connects you with drycleaning vendors who wash from shirts and suits to underwear and socks and have qualified professionals and everything thinking about the rush of your day-to-day.")), items.map(item => {
+    const {
+      imgUrl,
+      headerText,
+      bodyText
+    } = item;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_atoms_Card__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      imgUrl: imgUrl,
+      headerText: headerText,
+      bodyText: bodyText,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 62,
+        columnNumber: 18
+      }
+    });
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "info",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 11
+    }
+  }, "How it works")), items.map(item => {
+    const {
+      imgUrl,
+      headerText,
+      bodyText
+    } = item;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_atoms_Card__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      imgUrl: imgUrl,
+      headerText: headerText,
+      bodyText: bodyText,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 69,
+        columnNumber: 18
+      }
+    });
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "info",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72,
+      columnNumber: 11
+    }
+  }, "Prices"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73,
+      columnNumber: 11
+    }
+  }, "Our entire platform was created to bring practicality to your routine, our purpose and facilitate the service of washing clothes and freeing some time so that you can enjoy and enjoy as you please")), items.map(item => {
+    const {
+      imgUrl,
+      headerText,
+      bodyText
+    } = item;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_atoms_Card__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      imgUrl: imgUrl,
+      headerText: headerText,
+      bodyText: bodyText,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 79,
+        columnNumber: 18
+      }
+    });
+  })));
+};
+
+Showcase.Wrapper = _emotion_styled__WEBPACK_IMPORTED_MODULE_1__["default"].div`
+  max-width:1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+
+  #main-showcase {
+  margin-top:3rem;
+  display: flex;
+  place-items: center;
+  .showcase-text {
+    h1 {
+      font-family: Lora-bold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 50px;
+      line-height: 64px;
+      color: #1f1c4b;
+    }
+    p {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    a {
+      width: 200px;
+      height: 35px;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 35px;
+      text-align: center;
+    }
+    .text2 {
+      font-family: Lora;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 50px;
+      line-height: 64px;
+    }
+  }
+}
+
+#services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  text-align: center;
+  .info {
+    grid-column: 1 / span 4;
+    h1 {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 38px;
+      color: #1f1c4b;
+    }
+    p {
+      /* font-family: Raleway; */
+      font-size: 18px;
+      line-height: 21px;
+      padding: 1rem 15rem;
+    }
+  }
+  
+}
+`;
+/* harmony default export */ __webpack_exports__["default"] = (Showcase);
+
+/***/ }),
+
+/***/ "./src/components/pages/Home.tsx":
+/*!***************************************!*\
+  !*** ./src/components/pages/Home.tsx ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _molecules_Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../molecules/Navbar */ "./src/components/molecules/Navbar.tsx");
+/* harmony import */ var _molecules_Showcase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../molecules/Showcase */ "./src/components/molecules/Showcase.tsx");
+var _jsxFileName = "C:\\Users\\Knight\\Desktop\\Software Development\\Projects\\01 In Progress\\EasyWash\\easy_wash_web\\src\\components\\pages\\Home.tsx";
+
+
+
+
+const Home = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6,
+    columnNumber: 3
+  }
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_molecules_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7,
+    columnNumber: 5
+  }
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_molecules_Showcase__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 5
+  }
+}));
+
+/* harmony default export */ __webpack_exports__["default"] = (Home);
+
+/***/ }),
+
+/***/ "./src/components/pages/SignUp.tsx":
+/*!*****************************************!*\
+  !*** ./src/components/pages/SignUp.tsx ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\Knight\\Desktop\\Software Development\\Projects\\01 In Progress\\EasyWash\\easy_wash_web\\src\\components\\pages\\SignUp.tsx";
+
+
+const SignUp = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5,
+      columnNumber: 5
+    }
+  }, "You have reached sign up");
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SignUp);
+
+/***/ }),
+
+/***/ "./src/index.tsx":
+/*!***********************!*\
+  !*** ./src/index.tsx ***!
+  \***********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ "./src/App.tsx");
+/* harmony import */ var _serviceWorker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./serviceWorker */ "./src/serviceWorker.ts");
+var _jsxFileName = "C:\\Users\\Knight\\Desktop\\Software Development\\Projects\\01 In Progress\\EasyWash\\easy_wash_web\\src\\index.tsx";
+
+
+
+
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.StrictMode, {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7,
+    columnNumber: 3
+  }
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 5
+  }
+})), document.getElementById('root')); // If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+
+_serviceWorker__WEBPACK_IMPORTED_MODULE_3__["unregister"]();
+
+/***/ }),
+
+/***/ "./src/routes/Routes.tsx":
+/*!*******************************!*\
+  !*** ./src/routes/Routes.tsx ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _components_pages_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/pages/Home */ "./src/components/pages/Home.tsx");
+/* harmony import */ var _components_pages_SignUp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/pages/SignUp */ "./src/components/pages/SignUp.tsx");
+var _jsxFileName = "C:\\Users\\Knight\\Desktop\\Software Development\\Projects\\01 In Progress\\EasyWash\\easy_wash_web\\src\\routes\\Routes.tsx";
+
+
+
+
+
+const Routes = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  exact: true,
+  component: _components_pages_Home__WEBPACK_IMPORTED_MODULE_2__["default"],
+  path: "/",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 5
+  }
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  component: _components_pages_Home__WEBPACK_IMPORTED_MODULE_2__["default"],
+  path: "/home",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9,
+    columnNumber: 5
+  }
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  component: _components_pages_SignUp__WEBPACK_IMPORTED_MODULE_3__["default"],
+  path: "/signup",
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10,
+    columnNumber: 5
+  }
+}));
+
+/* harmony default export */ __webpack_exports__["default"] = (Routes);
+
+/***/ }),
+
+/***/ "./src/serviceWorker.ts":
+/*!******************************!*\
+  !*** ./src/serviceWorker.ts ***!
+  \******************************/
+/*! exports provided: register, unregister */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "register", function() { return register; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unregister", function() { return unregister; });
+// This optional code is used to register a service worker.
+// register() is not called by default.
+// This lets the app load faster on subsequent visits in production, and gives
+// it offline capabilities. However, it also means that developers (and users)
+// will only see deployed updates on subsequent visits to a page, after all the
+// existing tabs open on the page have been closed, since previously cached
+// resources are updated in the background.
+// To learn more about the benefits of this model and instructions on how to
+// opt-in, read https://bit.ly/CRA-PWA
+const isLocalhost = Boolean(window.location.hostname === 'localhost' || // [::1] is the IPv6 localhost address.
+window.location.hostname === '[::1]' || // 127.0.0.0/8 are considered localhost for IPv4.
+window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));
+function register(config) {
+  if (false) {}
+}
+
+function registerValidSW(swUrl, config) {
+  navigator.serviceWorker.register(swUrl).then(registration => {
+    registration.onupdatefound = () => {
+      const installingWorker = registration.installing;
+
+      if (installingWorker == null) {
+        return;
+      }
+
+      installingWorker.onstatechange = () => {
+        if (installingWorker.state === 'installed') {
+          if (navigator.serviceWorker.controller) {
+            // At this point, the updated precached content has been fetched,
+            // but the previous service worker will still serve the older
+            // content until all client tabs are closed.
+            console.log('New content is available and will be used when all ' + 'tabs for this page are closed. See https://bit.ly/CRA-PWA.'); // Execute callback
+
+            if (config && config.onUpdate) {
+              config.onUpdate(registration);
+            }
+          } else {
+            // At this point, everything has been precached.
+            // It's the perfect time to display a
+            // "Content is cached for offline use." message.
+            console.log('Content is cached for offline use.'); // Execute callback
+
+            if (config && config.onSuccess) {
+              config.onSuccess(registration);
+            }
+          }
+        }
+      };
+    };
+  }).catch(error => {
+    console.error('Error during service worker registration:', error);
+  });
+}
+
+function checkValidServiceWorker(swUrl, config) {
+  // Check if the service worker can be found. If it can't reload the page.
+  fetch(swUrl, {
+    headers: {
+      'Service-Worker': 'script'
+    }
+  }).then(response => {
+    // Ensure service worker exists, and that we really are getting a JS file.
+    const contentType = response.headers.get('content-type');
+
+    if (response.status === 404 || contentType != null && contentType.indexOf('javascript') === -1) {
+      // No service worker found. Probably a different app. Reload the page.
+      navigator.serviceWorker.ready.then(registration => {
+        registration.unregister().then(() => {
+          window.location.reload();
+        });
+      });
+    } else {
+      // Service worker found. Proceed as normal.
+      registerValidSW(swUrl, config);
+    }
+  }).catch(() => {
+    console.log('No internet connection found. App is running in offline mode.');
+  });
+}
+
+function unregister() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(registration => {
+      registration.unregister();
+    }).catch(error => {
+      console.error(error.message);
+    });
+  }
+}
+
+/***/ }),
+
+/***/ "./src/settings/__color.ts":
+/*!*********************************!*\
+  !*** ./src/settings/__color.ts ***!
+  \*********************************/
+/*! exports provided: MAIN_COLOR, MAIN_LIGHT_COLOR, LIGHT_COLOR, FONT_COLOR, MEDIUM_COLOR, DARK_COLOR */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MAIN_COLOR", function() { return MAIN_COLOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MAIN_LIGHT_COLOR", function() { return MAIN_LIGHT_COLOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LIGHT_COLOR", function() { return LIGHT_COLOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FONT_COLOR", function() { return FONT_COLOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MEDIUM_COLOR", function() { return MEDIUM_COLOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DARK_COLOR", function() { return DARK_COLOR; });
+const MAIN_COLOR = '#0469BD';
+const MAIN_LIGHT_COLOR = '#3086CD';
+const LIGHT_COLOR = '#f4f4f4';
+const FONT_COLOR = '#1F1C4B';
+const MEDIUM_COLOR = '#ccc';
+const DARK_COLOR = '#333';
+
+/***/ }),
+
+/***/ "./src/settings/__global.css.ts":
+/*!**************************************!*\
+  !*** ./src/settings/__global.css.ts ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (_emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"]`
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+  }
+  li{
+
+    list-style: none;
+  }
+a{
+
+    text-decoration: none;
+}
+  * {
+    box-sizing: border-box;
+  }
+`);
+
+/***/ }),
+
+/***/ 1:
+/*!***************************************************************************************************************!*\
+  !*** multi (webpack)/hot/dev-server.js ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.tsx ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\Knight\Desktop\Software Development\Projects\01 In Progress\EasyWash\easy_wash_web\node_modules\webpack\hot\dev-server.js */"./node_modules/webpack/hot/dev-server.js");
+__webpack_require__(/*! C:\Users\Knight\Desktop\Software Development\Projects\01 In Progress\EasyWash\easy_wash_web\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\Users\Knight\Desktop\Software Development\Projects\01 In Progress\EasyWash\easy_wash_web\src\index.tsx */"./src/index.tsx");
+
+
+/***/ })
+
+},[[1,"runtime-main",1]]]);
+//# sourceMappingURL=main.chunk.js.map

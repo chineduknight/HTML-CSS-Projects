@@ -1,0 +1,247 @@
+(this["webpackJsonpbizco-frontend"] = this["webpackJsonpbizco-frontend"] || []).push([[15],{
+
+/***/ "./src/components/AppFooter.tsx":
+/*!**************************************!*\
+  !*** ./src/components/AppFooter.tsx ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_img_mainlogo1_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/img/mainlogo1.png */ "./src/assets/img/mainlogo1.png");
+/* harmony import */ var _assets_img_mainlogo1_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_img_mainlogo1_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/esm/react-router.js");
+var _jsxFileName = "C:\\Users\\Knight\\Desktop\\Software Development\\Projects\\Job Related\\brisco\\bizco-frontend\\src\\components\\AppFooter.tsx";
+
+
+
+
+function AppFooter() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("footer", {
+    className: "footer flex text-sm text-gray-500 relative bottom-0 flex-col",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "flex flex-col mt-10",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "flex flex-row flex-wrap justify-between",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", {
+    className: "md:w-1/2",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 11
+    }
+  }, "BIZCO is the ultimate platform for traders to grow and manage their business and connect with manufacturers and importers."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", {
+    className: "w-32 my-4 p-1",
+    src: _assets_img_mainlogo1_png__WEBPACK_IMPORTED_MODULE_1___default.a,
+    alt: "",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "flex-row footer-copyright",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 11
+    }
+  }, "\xA9 ", new Date().getFullYear(), " Bizco | All rights reserved"))));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router__WEBPACK_IMPORTED_MODULE_2__["withRouter"])(AppFooter));
+
+/***/ }),
+
+/***/ "./src/routes/Unauthenticated.tsx":
+/*!****************************************!*\
+  !*** ./src/routes/Unauthenticated.tsx ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return UnAuthenticatedApp; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _public_routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./public.routes */ "./src/routes/public.routes.tsx");
+var _jsxFileName = "C:\\Users\\Knight\\Desktop\\Software Development\\Projects\\Job Related\\brisco\\bizco-frontend\\src\\routes\\Unauthenticated.tsx";
+
+
+function UnAuthenticatedApp() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_public_routes__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6,
+      columnNumber: 10
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./src/routes/public.routes.tsx":
+/*!**************************************!*\
+  !*** ./src/routes/public.routes.tsx ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PublicRouter; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _components_AppFooter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/AppFooter */ "./src/components/AppFooter.tsx");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./constants */ "./src/routes/constants.ts");
+var _jsxFileName = "C:\\Users\\Knight\\Desktop\\Software Development\\Projects\\Job Related\\brisco\\bizco-frontend\\src\\routes\\public.routes.tsx";
+
+
+
+
+const {
+  REGISTER,
+  LOGIN,
+  WILD_CARD,
+  HOME,
+  CHECKOUT,
+  STORE,
+  ORDERSUCCESS,
+  PRODUCT_CATEGORY,
+  ORDERFAILED
+} = _constants__WEBPACK_IMPORTED_MODULE_3__["ROUTES"];
+const {
+  lazy
+} = react__WEBPACK_IMPORTED_MODULE_0__;
+const NotFound = lazy(() => __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ../components/NotFound */ "./src/components/NotFound.tsx")));
+const routes = [{
+  path: REGISTER,
+  component: lazy(() => __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ../pages/register/index */ "./src/pages/register/index.tsx")))
+}, {
+  path: LOGIN,
+  component: lazy(() => __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ../pages/login/index */ "./src/pages/login/index.tsx")))
+}, {
+  path: STORE,
+  component: lazy(() => Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ../pages/sales/index */ "./src/pages/sales/index.tsx")))
+}, {
+  path: ORDERSUCCESS,
+  component: lazy(() => Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ../pages/sales/OrderSuccessful */ "./src/pages/sales/OrderSuccessful.tsx")))
+}, {
+  path: ORDERFAILED,
+  component: lazy(() => __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! ../pages/sales/OrderFailed */ "./src/pages/sales/OrderFailed.tsx")))
+}, {
+  path: CHECKOUT,
+  component: lazy(() => Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ../pages/sales/CheckoutPage */ "./src/pages/sales/CheckoutPage.tsx")))
+}, {
+  path: PRODUCT_CATEGORY,
+  component: lazy(() => __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! ../pages/sales/ProductCategory */ "./src/pages/sales/ProductCategory.tsx")))
+}];
+function PublicRouter() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: HOME,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Redirect"], {
+    to: LOGIN,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 11
+    }
+  })), routes.map(({
+    path,
+    component
+  }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: path,
+    key: path,
+    exact: true,
+    component: component,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: WILD_CARD,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](NotFound, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 11
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_AppFooter__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60,
+      columnNumber: 7
+    }
+  }));
+}
+
+/***/ })
+
+}]);
+//# sourceMappingURL=15.chunk.js.map

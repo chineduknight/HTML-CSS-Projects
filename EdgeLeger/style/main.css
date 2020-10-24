@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0.75rem 0;
+}
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+/* Utitlity classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #93cb52;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.bg-primary {
+  background-color: #93cb52;
+  color: #fff;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #93cb52;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #7ab436;
+}
+.bg-light {
+  background: #f4f4f4;
+}
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.p-1 {
+  padding: 1.5em;
+}
+.p-2 {
+  padding: 2em;
+}
+.p-3 {
+  padding: 3em;
+}
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2em 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+/* Nav bar */
+
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+  overflow: auto;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+#navbar ul li a:hover {
+  background: #93cb52;
+  border-radius: 5px;
+}
+
+/* showcase */
+#showcase {
+  height: 100vh;
+  color: #fff;
+  background-image: url('../img/showcase.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+
+  /* overlay */
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+/* What we do */
+.items {
+  display: flex;
+  padding: 1rem;
+}
+.item {
+  flex: 1;
+  padding: 1rem;
+}
+
+.item i {
+  background-color: #93cb52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Who */
+#who {
+  display: flex;
+}
+
+#who .who-img {
+  background: url('../img/people.jpg') no-repeat center center/cover;
+}
+
+#who div {
+  flex: 1;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #7ab436 dotted 1px;
+}
+.just {
+  text-align: justify;
+}
+
+/* Clinets */
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* Contact */
+#contact {
+  display: flex;
+}
+
+#contact div {
+  flex: 1;
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+#map {
+  background: url('../img/img3.jpg') no-repeat center center/cover;
+}

@@ -1,0 +1,177 @@
+(this["webpackJsonpbizco-frontend"] = this["webpackJsonpbizco-frontend"] || []).push([[9],{
+
+/***/ "./src/routes/tab-desktop.routes.tsx":
+/*!*******************************************!*\
+  !*** ./src/routes/tab-desktop.routes.tsx ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return TabDesktopApp; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_helpers__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/helpers */ "./src/utils/helpers.ts");
+var _jsxFileName = "C:\\Users\\Knight\\Desktop\\Software Development\\Projects\\Job Related\\brisco\\bizco-frontend\\src\\routes\\tab-desktop.routes.tsx";
+
+
+const {
+  lazy
+} = react__WEBPACK_IMPORTED_MODULE_0__;
+const AuthApp = lazy(() => Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(1), __webpack_require__.e(14)]).then(__webpack_require__.bind(null, /*! ./Authenticated */ "./src/routes/Authenticated.tsx")));
+const PublicApp = lazy(() => Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(1), __webpack_require__.e(15)]).then(__webpack_require__.bind(null, /*! ./Unauthenticated */ "./src/routes/Unauthenticated.tsx")));
+function TabDesktopApp() {
+  return Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_1__["isLoggedIn"])() ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](AuthApp, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 25
+    }
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](PublicApp, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 39
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./src/utils/helpers.ts":
+/*!******************************!*\
+  !*** ./src/utils/helpers.ts ***!
+  \******************************/
+/*! exports provided: isLoggedIn, extractInitialValues, getFileExtension, formatPhone, compressImage, paginate, formatValue */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isLoggedIn", function() { return isLoggedIn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "extractInitialValues", function() { return extractInitialValues; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getFileExtension", function() { return getFileExtension; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "formatPhone", function() { return formatPhone; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "compressImage", function() { return compressImage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paginate", function() { return paginate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "formatValue", function() { return formatValue; });
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./constants */ "./src/utils/constants.ts");
+/* harmony import */ var browser_image_compression__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! browser-image-compression */ "./node_modules/browser-image-compression/dist/browser-image-compression.mjs");
+
+
+const {
+  THOUSAND,
+  MILLION,
+  BILLION,
+  TRILLION
+} = _constants__WEBPACK_IMPORTED_MODULE_0__["UNITS"];
+/**
+ * Check if user is logged in
+ * @returns logged in status
+ */
+
+function isLoggedIn() {
+  return !!localStorage.getItem(_constants__WEBPACK_IMPORTED_MODULE_0__["STORAGE_KEY"]);
+}
+/**
+ * Extract initial values from an object for a formik form
+ * @param data the object whose keys are to be used to extract initial values
+ * @returns the formik initial values object
+ */
+
+function extractInitialValues(data) {
+  let result = {};
+  Object.values(data).forEach(key => {
+    result = { ...result,
+      [key]: ''
+    };
+  });
+  return result;
+}
+/**
+ * Takes a file name and gets its extension
+ * @param filename the file to be checked for extension
+ */
+
+function getFileExtension(filename) {
+  return String(filename.split('.').pop());
+}
+/**
+ * Formats a given number to return the desired phone number format
+ * @param phone the phone number to be formatted
+ * @returns the formatted phone number
+ */
+
+function formatPhone(phone) {
+  let formatted = phone;
+  if (phone.startsWith('0')) formatted = `+234${phone.substring(1)}`;else if (!formatted.startsWith('+')) formatted = `+${formatted}`;
+  return formatted;
+}
+/**
+ * Compresses an image
+ * @param imgFile the image file to be compressed
+ */
+
+function compressImage(imgFile) {
+  // you should provide one of maxSizeMB, maxWidthOrHeight in the options
+  const options = {
+    maxSizeMB: 0.1
+  };
+  return Object(browser_image_compression__WEBPACK_IMPORTED_MODULE_1__["default"])(imgFile, options);
+}
+/**
+ * Paginates an array of results
+ * @param items the items to be paginated
+ * @param cursor the current position of the cursor
+ * @param pageSize number of items per page
+ */
+
+function paginate(items, cursor = 0, pageSize = 10) {
+  const end = cursor + pageSize;
+  const pageContent = items.slice(cursor, end);
+  const hasNext = items.length - 1 > end;
+  const hasPrevious = cursor > 0;
+  return {
+    cursor: end,
+    pageContent,
+    hasNext,
+    hasPrevious,
+    previousCursor: cursor,
+    pageSize
+  };
+}
+/**
+ * Takes a number and formats it to fit in thousands, millions, etc
+ * @param {number} number the number to be formatted
+ * @returns {string} the formatted string to be displayed
+ */
+
+const formatValue = number => {
+  let res;
+  if (number < THOUSAND) return String(number);
+
+  if (number >= THOUSAND && number < MILLION) {
+    res = number / THOUSAND;
+    return `${res % 1 ? res.toFixed(1) : res}k`;
+  }
+
+  if (number >= MILLION && number < BILLION) {
+    res = number / MILLION;
+    return `${res % 1 ? res.toFixed(1) : res}m`;
+  }
+
+  if (number >= BILLION && number < TRILLION) {
+    res = number / BILLION;
+    return `${res % 1 ? res.toFixed(1) : res}b`;
+  }
+
+  res = number / TRILLION;
+  return `${res % 1 ? res.toFixed(1) : res}t`;
+};
+
+/***/ })
+
+}]);
+//# sourceMappingURL=9.chunk.js.map

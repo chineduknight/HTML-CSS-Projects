@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .nineteen {
+      overflow: hidden;
+      position: relative;
+      height: 100vh;
+    }
+    figure {
+      position: absolute;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      animation: responsive 20s linear infinite;
+    }
+    figure img {
+      width: 20%;
+      float: left;
+    }
+
+    @keyframes responsive {
+      0% {
+        left: 0;
+      }
+      20% {
+        left: 0;
+      }
+      25% {
+        left: -100%;
+      }
+      45% {
+        left: -100%;
+      }
+      50% {
+        left: -200%;
+      }
+      70% {
+        left: -200%;
+      }
+      75% {
+        left: -300%;
+      }
+      95% {
+        left: -300%;
+      }
+      100% {
+        left: -400%;
+      }
+    }
+  </style>
+  <body>
+    <div class="nineteen">
+      <figure>
+        <img src="/img/img-1.jpg" alt="" />
+        <img src="/img/img-5.jpg" alt="" />
+        <img src="/img/img-3.jpg" alt="" />
+        <img src="/img/img-4.jpg" alt="" />
+        <img src="/img/img-1.jpg" alt="" />
+      </figure>
+    </div>
+  </body>
+</html>

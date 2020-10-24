@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.twenty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.twenty ul {
+  position: relative;
+}
+
+.twenty ul li {
+  list-style: none;
+  text-align: center;
+}
+
+.twenty ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 3em;
+  padding: 5px 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 700;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.twenty ul:hover li a {
+  color: #0002;
+}
+
+.twenty ul li:hover a {
+  color: #000;
+  background: white;
+}
+
+.twenty ul li a:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 5em;
+  color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 500px;
+  -webkit-transition: letter-spacing 0.5s, left 0.5s;
+  transition: letter-spacing 0.5s, left 0.5s;
+}
+
+.twenty ul li a:hover:before {
+  content: attr(data-text);
+  opacity: 1;
+  left: 50%;
+  letter-spacing: 10px;
+  width: 1800px;
+  height: 1800px;
+}
+
+.twenty ul li:nth-child(6n + 1) a:before {
+  background: #81ecec;
+}
+
+.twenty ul li:nth-child(6n + 2) a:before {
+  background: #ff7675;
+}
+
+.twenty ul li:nth-child(6n + 3) a:before {
+  background: #55efc4;
+}
+
+.twenty ul li:nth-child(6n + 4) a:before {
+  background: #a29bfe;
+}
+
+.twenty ul li:nth-child(6n + 5) a:before {
+  background: #fd79a8;
+}
+
+.twenty ul li:nth-child(6n + 6) a:before {
+  background: #ffeaa7;
+}
+
+.two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  background-color: #191919;
+}
+
+.two label {
+  position: relative;
+  width: 240px;
+  height: 80px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.two label input {
+  opacity: 0;
+}
+
+.two label .check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background-color: #101010;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 0 0 4px #101010;
+          box-shadow: 0 0 0 4px #101010;
+}
+
+.two label .check:before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 4px);
+  left: -30px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f00;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 20px #f00, 0 0 40px #f00, 0 0 80px #f00;
+          box-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 20px #f00, 0 0 40px #f00, 0 0 80px #f00;
+}
+
+.two label .check:after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 4px);
+  right: -30px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #101010;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.two label input:checked ~ .check:before {
+  background: #101010;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.two .check:after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 4px);
+  right: -30px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #101010;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.two label input:checked ~ .check:after {
+  background: #0f0;
+  -webkit-box-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0, 0 0 80px #0f0;
+          box-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0, 0 0 80px #0f0;
+}
+
+.two .btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 80px;
+  border-radius: 40px;
+  background: #fff;
+  -webkit-box-shadow: inset 0 -20px 15px #292929, inset 0 20px 15px #292929;
+          box-shadow: inset 0 -20px 15px #292929, inset 0 20px 15px #292929;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.two .btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 52px;
+  height: 80px;
+  background: #252525;
+  /*background: linear-gradient(0deg,#191919,#2f2f2f);*/
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-box-shadow: inset -5px -5px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: inset -5px -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.two .btn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 52px;
+  height: 80px;
+  background: #252525;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  -webkit-box-shadow: inset 5px -5px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 5px -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.two label input:checked ~ .btn {
+  left: 50%;
+}

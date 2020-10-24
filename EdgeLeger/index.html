@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edge Leger</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="style/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1100px)"
+      href="style/widescreen.css"
+    />
+  </head>
+  <body id="home">
+    <nav id="navbar">
+      <h1 class="logo">
+        <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>
+        Ledger
+      </h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#what">What</a></li>
+        <li><a href="#who">Who</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header id="showcase">
+      <!-- <div id="cover-image"> -->
+      <div class="showcase-content">
+        <h1 class="l-heading">
+          The Sky is the Limit
+        </h1>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sequi
+          nam saepe natus harum id vitae tenetur corrupti. Accusantium fuga
+          labore quam quia iste est?
+        </p>
+        <a href="#what" class="btn">Read More</a>
+      </div>
+      <!-- </div> -->
+    </header>
+    <section id="what" class="bg-light py-1 text-center">
+      <div class="container">
+        <h2 class="m-heading">
+          <span class="text-primary">What</span>
+          We Do
+        </h2>
+        <div class="items">
+          <div class="item">
+            <i class="fas fa-university fa-2x"></i>
+            <div>
+              <h3>Investment Beureer</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, blanditiis.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-university fa-2x"></i>
+            <div>
+              <h3>Porfoilo managemnt</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, blanditiis.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-pencil-alt fa-2x"></i>
+            <div>
+              <h3>Tax & Custodial</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas, blanditiis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="who">
+      <div class="who-img"></div>
+      <div class="who-text bg-dark p-2">
+        <h2 class="m-heading">
+          <span class="text-primary">Who</span>
+          We Are
+        </h2>
+        <p class="just">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Reprehenderit atque necessitatibus minus nam accusantium, nesciunt
+          cupiditate praesentium natus omnis quis! Minima, vitae. Eveniet
+          excepturi aut itaque ab provident quos voluptatibus!
+        </p>
+
+        <h3>Our Team</h3>
+        <ul class="list">
+          <li>Chris Udoh: CEO</li>
+          <li>Batwoman: CFO</li>
+          <li>John Legeden: Lead Accountant</li>
+          <li>Patience Johnathan: Investment Manager</li>
+          <li>Donald Trump: Senior Accountant</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section id="clients" class="py-1">
+      <div class="container">
+        <h2 class="m-heading text-center">
+          <span class="text-primary">Our</span>
+          Clients
+        </h2>
+
+        <div class="items py-1">
+          <div><img src="./img/logos/logo1.png" alt="Client1" /></div>
+          <div><img src="./img/logos/logo2.png" alt="Client2" /></div>
+          <div><img src="./img/logos/logo3.png" alt="Client3" /></div>
+          <div><img src="./img/logos/logo4.png" alt="Client4" /></div>
+          <div><img src="./img/logos/logo5.png" alt="Client5" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sectiono: Contact -->
+    <section id="contact">
+      <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Contact Us</h2>
+        <p>Please use the form below to contact us</p>
+        <form>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Enter Name" />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="Enter Email" />
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="text" placeholder="Enter Phone" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea type="text" placeholder="Enter Message"></textarea>
+          </div>
+          <input type="submit" value="Submit" class="btn btn-dark" />
+        </form>
+      </div>
+      <div id="map"></div>
+    </section>
+    <footer id="main-footer" class="bg-dark text-center py-1">
+      <div class="container">
+        <p>Copyright &copy; 2019, EdigeLedger, All Right Reservged</p>
+      </div>
+    </footer>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+body {
+  color: #fffffb;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+section {
+  padding: 30vh 0;
+}
+
+.one {
+  background: #ffc145;
+  position: relative;
+}
+.one::after,
+.one::before {
+  position: absolute;
+  content: '';
+  width: 150px;
+  height: 150px;
+  background: #ffc145;
+  bottom: -1em;
+  z-index: 100;
+}
+
+.one::before {
+  right: 50%;
+  transform: skew(0, 20deg);
+}
+.one::after {
+  left: 50%;
+  transform: skew(0, -20deg);
+}
+.two {
+  background: #ff6b6c;
+  position: relative;
+  z-index: 10;
+  margin-bottom: -10vw;
+}
+
+.three {
+  background: #5b5f97;
+}
+/* .four {
+  background: cyan;
+} */
+
+.box {
+  width: 300px;
+  height: 300px;
+  margin: 0;
+  margin-left: -5px;
+  display: inline-block;
+}
+
+.box1 {
+  background-color: #45aaff;
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+  /* display: grid;
+  place-items: center; */
+}
+
+.box2 {
+  background-color: #269cff;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+}
+
+.box3 {
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+  background-color: #45aaff;
+}
+
+.box4 {
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  background-color: #64b8ff;
+}
+
+.five {
+  background-color: #efefef;
+}
+.poly {
+  background-color: #304770;
+}
+
+.p1 {
+  height: 50px;
+  clip-path: polygon(50% 40%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.p2 {
+  margin-top: -1px;
+
+  padding: 1rem 1.5rem;
+}
+.p3 {
+  height: 50px;
+  clip-path: polygon(100% 0, 100% 100%, 50% 40%, 0 100%, 0 0);
+}
+
+.card-holder {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.card {
+  width: 80%;
+  position: relative;
+}
+.card-text {
+  background-color: #e5e5e5;
+  color: #323232;
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 25%;
+  text-align: center;
+}
+.card-text h3 {
+  font-size: 15px;
+}
+
+.card-text p {
+  font-size: 13px;
+}
